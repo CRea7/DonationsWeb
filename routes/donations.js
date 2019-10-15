@@ -83,21 +83,17 @@ router.incrementUpvotes = (req, res) => {
     });
 }
 
+
 router.deleteDonation = (req, res) => {
-    //Delete the selected donation based on its id
-    var donation = getByValue(donations, req.params.id)
 
-    var position = donations.indexOf(donation);
-
-    if(position != -1)
-    {
-        donations.splice(position,1);
-        res.json({message: 'donation removed'})
-    }
-    else
-    {
-        res.json({message: 'donation could not be found'})
-    }
+    Donation.findByIdAndRemove({"_id": req.params.id}, function(err) {
+        if (err)
+            res.json({message:'donation not deleted!'})
+        // return a suitable error message
+        else
+            res.json({message:'donation deleted!'})
+        // return a suitable success message
+    });
 }
 
 router.getTotalUpvotes = (req, res) => {

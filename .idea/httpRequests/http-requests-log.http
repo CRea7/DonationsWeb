@@ -1,3 +1,58 @@
+DELETE http://localhost:3000/donations/5da5966f3525392b0d7a431d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype":"Cash","amount":750,"upvotes":3}
+
+<> 2019-10-15T111021.200.json
+
+###
+
+GET http://localhost:3000/donations
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype":"Cash","amount":750,"upvotes":3}
+
+<> 2019-10-15T110958.200.json
+
+###
+
+GET http://localhost:3000/donations/5da596143525392b0d7a431c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype":"Cash","amount":750,"upvotes":3}
+
+<> 2019-10-15T110955.200.json
+
+###
+
+DELETE http://localhost:3000/donations/5da596143525392b0d7a431c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype":"Cash","amount":750,"upvotes":3}
+
+<> 2019-10-15T110947.200.json
+
+###
+
+GET http://localhost:3000/donations
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"paymenttype":"Cash","amount":750,"upvotes":3}
+
+<> 2019-10-15T110921.200.json
+
+###
+
 GET http://localhost:3000/donations/5da58fa8b93ad2c614d47cc5
 Accept: */*
 Cache-Control: no-cache
@@ -480,61 +535,6 @@ Content-Type: application/json
 {"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
 
 <> 2019-10-01T123603.200.json
-
-###
-
-GET http://localhost:3000/donations/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
-
-<> 2019-10-01T123508.200.json
-
-###
-
-PUT http://localhost:3000/donations/1000000
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
-
-<> 2019-10-01T123503.404.html
-
-###
-
-PUT http://localhost:3000/donations/1000000/vote
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
-
-<> 2019-10-01T123500.404.html
-
-###
-
-PUT http://localhost:3000/donations/1000000/votes
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
-
-<> 2019-10-01T123459.404.html
-
-###
-
-PUT http://localhost:3000/donations/1000000/vote
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"id":0,"paymenttype":"Direct","amount":500,"upvotes":0}
-
-<> 2019-10-01T123418.404.html
 
 ###
 
